@@ -6,6 +6,7 @@ public class PlayerManager : MonoBehaviour
 {
     public GameObject owner;
     public BoxCollider Decohedron;  
+    public GameObject target;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,8 @@ public class PlayerManager : MonoBehaviour
     {
         owner.GetComponent<FPSController>().enabled = false;
         owner.GetComponent<FollowCamera>().enabled=true;
+
+
     }
        
 
