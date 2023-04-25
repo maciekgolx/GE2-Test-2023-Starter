@@ -17,11 +17,6 @@ public class Fighter : MonoBehaviour
 
     void Update()
     {                
-        text.text = "Health: " + health + "\n" + 
-            
-            "Ammo: " + ammo + "\n" +
-            "State: " + GetComponent<StateMachine>().currentState.GetType().Name + "\n" +
-            "Global State: " + GetComponent<StateMachine>().globalState.GetType().Name;
 
     }
 }
