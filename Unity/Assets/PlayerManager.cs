@@ -8,10 +8,11 @@ public class PlayerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        trigger=0;
     }
     class FindTargetState: State
     {
+        public int trigger=0;
         public override void Enter()
         {
             if (trigger==0)
