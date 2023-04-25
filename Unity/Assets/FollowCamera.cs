@@ -5,6 +5,7 @@ using UnityEngine;
 public class FollowCamera : MonoBehaviour
 {
     public Transform target; 
+    public Transform FollowTarget;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class FollowCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime);
-        transform.LookAt(target.parent);
+        transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime+ 0.05f);
+        transform.LookAt(FollowTarget.parent);
     }
 }
